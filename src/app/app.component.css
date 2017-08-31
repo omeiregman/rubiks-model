@@ -8,32 +8,9 @@ html, body{
     background-color: #fff;
 }
 
-.top {
-    color: #f1f1f1;
-}
-.top-head{
-    color: dimgrey;
-    text-align: center;
-}
-
-.left-side-input{
+footer{
   text-align: center;
-  background-color: #fff;
-  color: #1abc9c;
-}
-.left-side-value{
-  background-color: #1abc9c;
-  color: #fff;
-  padding-left: 20px;
-  margin-top: 50px;
-
-}
-.right-side{
-  background-color: #e3e3e3;
-}
-.right-image{
- width: 100%;
- height: auto;
+  color: #000;
 }
 
 /* GRID */
@@ -75,8 +52,36 @@ html, body{
     padding: 20px 0;
 }
 
+.top {
+    color: #f1f1f1;
+}
+.top-head{
+    color: dimgrey;
+    text-align: center;
+}
 
+.left-side-input{
+  text-align: center;
+  background-color: #fff;
+  color: #1abc9c;
+}
+.left-side-value{
+  background-color: #1abc9c;
+  color: #fff;
+  padding-left: 20px;
+  margin-top: 50px;
 
+}
+.right-side{
+  background-color: #e3e3e3;
+}
+
+.right-image{
+ width: 100%;
+ height: 600px;
+}
+
+/*Other Assets*/
 input{
     display: block;
     padding: 10px;

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+//Variables
 number;
 myNum = 0;
 no_of_cubelets;
@@ -16,6 +16,8 @@ internal_cubelets;
 derived_cube;
 derived_rubix;
 showVar: boolean = true;
+
+//function to calcuate objectives of the project
 calculateModel = function() {
 
   this.myNum = parseInt(this.number);
@@ -24,16 +26,17 @@ calculateModel = function() {
   this.external_cubelets = (6 * Math.pow(this.myNum-1, 2)) + 2;
   this.internal_cubelets = Math.pow(this.myNum-2, 3);
 
+//this iterates through n to find a subset of n
   for (var i = this.myNum-1; i>1; i--){
     this.derived_cube = Math.pow(i, 3);
       if (this.derived_cube === this.internal_cubelets){
         this.derived_rubix = i;
-        break;
-      }
-
+         break;
+       }
   }
 } else {
   alert("Please enter a value of n greater than 1");
+  this.number.value="";
 }
 }
 
