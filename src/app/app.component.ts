@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -18,6 +19,7 @@ showVar: boolean = true;
 calculateModel = function() {
 
   this.myNum = parseInt(this.number);
+  if (this.myNum>1) {
   this.no_of_cubelets = Math.pow(this.myNum, 3);
   this.external_cubelets = (6 * Math.pow(this.myNum-1, 2)) + 2;
   this.internal_cubelets = Math.pow(this.myNum-2, 3);
@@ -29,12 +31,10 @@ calculateModel = function() {
         break;
       }
 
-    this.showVar = !this.showVar;
   }
-
-  // console.log("total number of cubelets in "+ this.myNum + " = " + this.no_of_cubelets);
-  // console.log("visible cube in "+ this.myNum + " = " + this.external_cubelets);
-  // console.log("hidden cube in "+ this.myNum + " = " + this.internal_cubelets);
+} else {
+  alert("Please enter a value of n greater than 1");
+}
 }
 
 }
